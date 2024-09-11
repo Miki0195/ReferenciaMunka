@@ -1,0 +1,44 @@
+{
+    "admin": {
+        "username": "admin",
+        "password": "admin",
+        "email": "t5k17g@inf.elte.hu",
+        "cards": {
+            "3": "Bulbasaur",
+            "9": "Spearow",
+            "14": "Random",
+            "17": "Pidgey",
+            "18": "Rattata",
+            "19": "Ekans",
+            "20": "OP",
+            "21": "Test"
+        },
+        "money": 9999999999999,
+        "trades": [],
+        "id": "admin"
+    },
+    "65a6f2a0adcf3": {
+        "username": "Buxi",
+        "password": "asd123",
+        "email": "Buchsbaum.miki2004@gmail.com",
+        "cards": [
+            "Charizard"
+        ],
+        "money": 440.0000000000001,
+        "trades": [],
+        "id": "65a6f2a0adcf3"
+    },
+    "65a6f2c810144": {
+        "username": "test",
+        "password": "asd",
+        "email": "test@test.com",
+        "cards": {
+            "0": "Pikachu",
+            "2": "Caterpie",
+            "3": "Weedle"
+        },
+        "money": 371.5,
+        "trades": [],
+        "id": "65a6f2c810144"
+    }
+}

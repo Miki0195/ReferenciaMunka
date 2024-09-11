@@ -1,0 +1,148 @@
+body{
+    background-image: url(./images/background.png);
+    background-size: cover;
+}
+
+h1{
+    padding-left: 50px;
+    font-size: 75px;
+    color: black;
+    font-weight: bold;
+}
+img{
+    width: 95%;
+}
+.active{
+    border: 5px solid white;
+    border-radius: 10%;
+}
+
+#rotate, #mirror{
+    width: 110px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    border: none;
+    transition-duration: 200ms;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#rotate:hover, #mirror:hover{
+    background-color: white;
+    font-weight: bold;
+    border: 3px solid black;
+}
+
+#game-board{
+    background-color: rgb(255, 255, 255);
+    border: 5px solid white;
+    margin-top: 20px;
+    height: 905px;
+    border-radius: 2%;
+}
+#side-bar{
+    height: 700px;
+    margin-top: 20px;
+    align-items: center;
+}
+#current-tile{
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+#current-season{
+    padding-bottom: 10px;
+}
+.my-row{
+    padding-left: 5px;
+    display: flex;
+}
+.cell{
+    background-color: rgb(227, 198, 145);
+    background-position: 45%;
+    width: 78px;
+    height: 78px;
+    margin: 2px 2px 0 0;
+    margin-right: 3px;
+    margin-top: 3px;
+    border-radius: 10%;
+}
+#remaining-time{
+    padding-top: 20px;
+    font-weight: bold;
+}
+#actual-tile-time{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+h3{
+    padding-top: 10px;
+    font-weight: bold;
+}
+#pictures{
+    display: flex;
+    padding-bottom: 10px;
+}
+#picture{
+    margin-right: 20px;
+}
+#season_points{
+    align-items: center;
+    width: 700px;
+    padding-left: 50px;
+}
+.widgets{
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    height: 100px;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    text-shadow: 
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000, 
+     1px  1px 0 #000; 
+}
+.widgets:nth-child(1){
+    background-color: rgb(12, 206, 12);
+    border: 2px solid darkgreen;
+}
+.widgets:nth-child(2){
+    background-color: yellow;
+    border: 2px solid rgb(223, 240, 92);
+}
+.widgets:nth-child(3){
+    background-color: rgb(193, 154, 107);
+    border: 2px solid rgb(111, 78, 55);
+}
+.widgets:nth-child(4){
+    background-color: rgb(76, 161, 239);
+    border: 2px solid darkblue;
+}
+
+.hill{
+    background-image: url(./images/hill.png);
+}
+.water{
+    background-image: url(./images/water.png);
+}
+.town{
+    background-image: url(./images/town.png);
+}
+.forest{
+    background-image: url(./images/forest.png);
+}
+.farm{
+    background-image: url(./images/farm.png);
+}
