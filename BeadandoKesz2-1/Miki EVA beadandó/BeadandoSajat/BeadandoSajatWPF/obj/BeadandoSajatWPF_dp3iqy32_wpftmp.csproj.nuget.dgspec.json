@@ -1,0 +1,167 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Buchsbaum Hanna\\OneDrive\\Asztali gép\\Miki EVA beadandó\\BeadandoSajat\\BeadandoSajatWPF\\BeadandoSajatWPF.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Buchsbaum Hanna\\OneDrive\\Asztali gép\\Miki EVA beadandó\\BeadandoSajat\\BeadandoSajatWPF\\BeadandoSajatWPF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Buchsbaum Hanna\\OneDrive\\Asztali gép\\Miki EVA beadandó\\BeadandoSajat\\BeadandoSajatWPF\\BeadandoSajatWPF.csproj",
+        "projectName": "BeadandoSajatWPF",
+        "projectPath": "C:\\Users\\Buchsbaum Hanna\\OneDrive\\Asztali gép\\Miki EVA beadandó\\BeadandoSajat\\BeadandoSajatWPF\\BeadandoSajatWPF.csproj",
+        "packagesPath": "C:\\Users\\Buchsbaum Hanna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Buchsbaum Hanna\\OneDrive\\Asztali gép\\Miki EVA beadandó\\BeadandoSajat\\BeadandoSajatWPF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Buchsbaum Hanna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Buchsbaum Hanna\\OneDrive\\Asztali gép\\Miki EVA beadandó\\BeadandoSajat\\BombazoSajat\\BombazoSajat.csproj": {
+                "projectPath": "C:\\Users\\Buchsbaum Hanna\\OneDrive\\Asztali gép\\Miki EVA beadandó\\BeadandoSajat\\BombazoSajat\\BombazoSajat.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Buchsbaum Hanna\\OneDrive\\Asztali gép\\Miki EVA beadandó\\BeadandoSajat\\BombazoSajat\\BombazoSajat.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Buchsbaum Hanna\\OneDrive\\Asztali gép\\Miki EVA beadandó\\BeadandoSajat\\BombazoSajat\\BombazoSajat.csproj",
+        "projectName": "BombazoSajat",
+        "projectPath": "C:\\Users\\Buchsbaum Hanna\\OneDrive\\Asztali gép\\Miki EVA beadandó\\BeadandoSajat\\BombazoSajat\\BombazoSajat.csproj",
+        "packagesPath": "C:\\Users\\Buchsbaum Hanna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Buchsbaum Hanna\\OneDrive\\Asztali gép\\Miki EVA beadandó\\BeadandoSajat\\BombazoSajat\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Buchsbaum Hanna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.AssemblyInfo.cs
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.exe
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.deps.json
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.runtimeconfig.json
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.dll
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.pdb
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.dll
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\refint\BombazoSajat.dll
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.pdb
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.genruntimeconfig.cache
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\ref\BombazoSajat.dll
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\DefaultMaps\map10x10.txt
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\DefaultMaps\map14x14.txt
+C:\Users\User\Desktop\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\DefaultMaps\map7x7.txt
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\DefaultMaps\map10x10.txt
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\DefaultMaps\map14x14.txt
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\DefaultMaps\map7x7.txt
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.exe
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.deps.json
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.runtimeconfig.json
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.dll
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.pdb
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.csproj.AssemblyReference.cache
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.GeneratedMSBuildEditorConfig.editorconfig
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.AssemblyInfoInputs.cache
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.AssemblyInfo.cs
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.csproj.CoreCompileInputs.cache
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.dll
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\refint\BombazoSajat.dll
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.pdb
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.genruntimeconfig.cache
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\ref\BombazoSajat.dll
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\----IMI----\Egyetem\ELTE2024-3Felev\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.csproj.CopyComplete
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\DefaultMaps\map10x10.txt
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\DefaultMaps\map14x14.txt
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\DefaultMaps\map7x7.txt
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.exe
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.deps.json
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.runtimeconfig.json
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.pdb
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.csproj.AssemblyReference.cache
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.AssemblyInfoInputs.cache
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.AssemblyInfo.cs
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.csproj.CoreCompileInputs.cache
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.csproj.CopyComplete
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\refint\BombazoSajat.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.pdb
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.genruntimeconfig.cache
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\ref\BombazoSajat.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\DefaultMaps\map10x10.txt
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\DefaultMaps\map14x14.txt
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\DefaultMaps\map7x7.txt
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.exe
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.deps.json
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.runtimeconfig.json
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\BombazoSajat.pdb
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.csproj.AssemblyReference.cache
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.AssemblyInfoInputs.cache
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.AssemblyInfo.cs
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.csproj.CoreCompileInputs.cache
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.csproj.CopyComplete
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\refint\BombazoSajat.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.pdb
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\BombazoSajat.genruntimeconfig.cache
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BombazoSajat\obj\Debug\net6.0\ref\BombazoSajat.dll

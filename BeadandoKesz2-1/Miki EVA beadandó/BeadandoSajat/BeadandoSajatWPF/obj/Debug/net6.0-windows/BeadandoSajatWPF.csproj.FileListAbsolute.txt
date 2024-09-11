@@ -1,0 +1,68 @@
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BombazoSajat.deps.json
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BombazoSajat.runtimeconfig.json
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\DefaultMaps\map10x10.txt
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\DefaultMaps\map14x14.txt
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\DefaultMaps\map7x7.txt
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BombazoSajat.exe
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BeadandoSajatWPF.exe
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BeadandoSajatWPF.deps.json
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BeadandoSajatWPF.runtimeconfig.json
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BeadandoSajatWPF.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BeadandoSajatWPF.pdb
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BombazoSajat.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BombazoSajat.pdb
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.csproj.AssemblyReference.cache
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF_MarkupCompile.cache
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF_MarkupCompile.lref
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.g.resources
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.AssemblyInfoInputs.cache
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.AssemblyInfo.cs
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.csproj.CoreCompileInputs.cache
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.csproj.CopyComplete
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\refint\BeadandoSajatWPF.dll
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.pdb
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.genruntimeconfig.cache
+C:\Users\Strix\OneDrive - Eotvos Lorand Tudomanyegyetem\Asztal\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\ref\BeadandoSajatWPF.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\DefaultMaps\map10x10.txt
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\DefaultMaps\map14x14.txt
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\DefaultMaps\map7x7.txt
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BombazoSajat.deps.json
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BombazoSajat.runtimeconfig.json
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BombazoSajat.exe
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BeadandoSajatWPF.exe
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BeadandoSajatWPF.deps.json
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BeadandoSajatWPF.runtimeconfig.json
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BeadandoSajatWPF.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BeadandoSajatWPF.pdb
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BombazoSajat.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\bin\Debug\net6.0-windows\BombazoSajat.pdb
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.csproj.AssemblyReference.cache
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF_MarkupCompile.cache
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF_MarkupCompile.lref
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.g.resources
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.AssemblyInfoInputs.cache
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.AssemblyInfo.cs
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.csproj.CoreCompileInputs.cache
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.csproj.CopyComplete
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\refint\BeadandoSajatWPF.dll
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.pdb
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\BeadandoSajatWPF.genruntimeconfig.cache
+C:\Users\Buchsbaum Hanna\OneDrive\Asztali gép\Miki EVA beadandó\BeadandoSajat\BeadandoSajatWPF\obj\Debug\net6.0-windows\ref\BeadandoSajatWPF.dll
