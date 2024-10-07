@@ -1,0 +1,85 @@
+﻿
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 50px; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.welcome-text {
+    animation: fadeIn 1s ease-in-out; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+.btn-primary {
+    background-color: black;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: black;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+}
+
+.game-description {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 0.75s;
+}
+
+    .game-description h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .game-description p {
+        font-size: 16px;
+        line-height: 1.6;
+    }

@@ -1,0 +1,180 @@
+﻿*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #ededed;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.cont {
+    overflow: hidden;
+    position: relative;
+    width: 640px;
+    height: auto;
+    margin: 0 auto 100px;
+    background: #fff;
+}
+
+.form {
+    position: relative;
+    width: 640px;
+    height: 100%;
+    transition: transform 1.2s ease-in-out;
+    padding: 50px 30px 0;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: 36px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+h2 {
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    width: 400px;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.submit {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: black;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #333;
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .cont, .form {
+        width: 100%;
+        max-width: 500px;
+        padding: 30px;
+    }
+
+    label {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .cont, .form {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    label {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 150px) {
+    * {
+        font-size: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .cont, .form {
+        width: 100%;
+        max-width: 300px;
+        padding: 7px;
+    }
+
+    label {
+        width: 100%;
+        max-width: 100px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 50px;
+    }
+}
+
+.submit:disabled {
+    background-color: grey;
+    transform: translateY(0);
+}
+
+#w-div {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: grey;
+    color: white;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    transition: background-color 0.3s ease;
+    font-family: sans-serif;
+}
+
+#w-div.black-bg {
+    background-color: black;
+}
+
+#validationDiv {
+    margin-top: 30px;
+    height: auto;
+    transform-origin: bottom;
+    overflow: hidden;
+    transition: margin .25s, transform 0.25s;
+}
+
+#validateText {
+}

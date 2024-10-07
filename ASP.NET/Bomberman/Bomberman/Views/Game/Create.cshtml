@@ -1,0 +1,37 @@
+﻿@using Bomberman.Models.SignalR
+@model LobbyCreateViewModel
+@{
+    ViewData["Title"] = "Create Game";
+}
+
+<link rel="stylesheet" href="~/css/Create.css" asp-append-version="true" />
+<script src="~/js/createGame.js"></script>
+
+<div class="cont">
+    <div class="form">
+        <h2 class="text-center">Create Game</h2>
+        @using (Html.BeginForm("Create", "Game", FormMethod.Post))
+        {
+            <label for="map" class="form-label">Select Map</label>
+            <select id="map" asp-for="@Model.Map" class="form-control">
+                @foreach (var m in Model.Maps)
+                {
+                    <option value="@m">@m</option>
+                }
+
+            </select>
+
+            <label for="playerc" class="form-label">Maximum Players</label>
+            <input type="number" id="playerc" asp-for="@Model.MaxPlayers" value="2" min="2" max="4" class="form-control" />
+            <p class="text-danger text-center">@Html.ValidationMessageFor(m => m.MaxPlayers)</p>
+
+            <div id="validationDiv" class="d-flex flex-column justify-content-center align-items-center">
+                <div id="w-div">W</div>
+                <p id="validateText">Validate by pressing 'W'</p>
+            </div>
+
+            <button id="submitButton" type="submit" class="submit" disabled>Create</button>
+        }
+        <p class="text-danger text-center">@(Model != null ? Model.ErrorMessage : "")</p>
+    </div>
+</div>

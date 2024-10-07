@@ -1,0 +1,73 @@
+﻿@using Bomberman.Models.SignalR
+@model List<LobbyDisplayViewModel>
+@{
+    ViewData["Title"] = "Games";
+}
+
+<link rel="stylesheet" href="~/css/Games.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/GamesList.css" asp-append-version="true" />
+<script src="~/js/gamesList.js"></script>
+
+@* Pop-up div for messages *@
+@if (TempData["PopupTextForGames"] != null)
+{
+    <div id="textPopUpBackgroundId" class="textPopUpBackground">
+        <div class="textPopUpContent">
+            <p id="textPopUpText">@TempData["PopupTextForGames"]</p>
+            <button id="textPopUpOkButton" onclick="closeTextPopUp()">OK</button>
+        </div>
+    </div>
+}
+
+
+@* Pop-up form for specatating *@
+
+<div id="spectateFormBackground">
+    <div id="spectateForm">
+        <span onclick="closeSpectateForm()" class="close">&times;</span>
+        <h2>Spectate Option</h2>
+        <div class="container d-flex justify-content-center">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <p class="align-middle pop-up-p">Do you want to spectate?</p>
+                </div>
+                <div class="col-auto">
+                    <label class="switch">
+                        <input type="checkbox" id="spectateSwitch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="validationDiv" class="d-flex flex-column justify-content-center align-items-center">
+            <div id="w-div">W</div>
+            <p id="validateText">Validate by pressing 'W'</p>
+        </div>
+        <button id="submitButton" onclick="goToLobby()" disabled>Submit</button>
+    </div>
+</div>
+
+<div class="cont">
+    <div class="game-list">
+        @if (Model.Count == 0)
+        {
+            <h2 class="no-games">No games created</h2>
+            <div class="create-game-container">
+                @Html.ActionLink("Create Game", "Create", "Game", htmlAttributes: new { @class = "custom-button-main" })
+            </div>
+        }
+        else
+        {
+            @foreach (var g in Model)
+            {
+                <div class="game-entry">
+                    <span class="lobby-info">Lobby: <span class="lobby-item"> @g.LobbyNum </span> <span class="separator">|</span> Selected map:<span class="lobby-item">@(g.Map)</span></span>
+                    <button class="custom-button" onclick="showSpectateForm('@(g.LobbyNum)')">Join</button>
+                </div>
+            }
+            <div>
+                @Html.ActionLink("Create Game", "Create", "Game", htmlAttributes: new { @class = "custom-button-main" })
+            </div>
+        }
+    </div>
+</div>

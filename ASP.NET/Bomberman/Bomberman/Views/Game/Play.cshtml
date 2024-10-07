@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Lobby";
+}
+
+<link rel="stylesheet" href="~/css/GameProba.css" asp-append-version="true" />
+
+<script>
+    var currentUser = "@User.Identity!.Name";
+</script>
+
+<div id="deathPopup" class="modalDeath">
+    <div class="modal-content">
+        <h2>Game Over</h2>
+        <p>Final Score: <span id="finalScore"></span></p>
+        <button id="newBtn" class="submitButton">New Game</button>
+        <button id="spectateBtn" class="submitButton">Spectate</button>
+    </div>
+</div>
+
+<div id="gameEndPopup" class="modal">
+    <div class="modal-content">
+        <h2>Game Over</h2>
+        <p id="gameEndPopupText"></p>
+        <button id="exitBtn" class="submitButton">Exit</button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+            <div id="spectatorListContainer" class="hide">
+                <h3 class="text-center">Spectators</h3>
+                <ul id="spectatorList" class="list-group"></ul>
+            </div>
+    </div>
+</div>
+
+<div id="confirmationModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="LeaveeModalXButton">&times;</span>
+        <p class="confirmation-p">Are you sure you want to leave the game?</p>
+        <button id="confirmLeave" class="submitButton">Leave Game</button>
+        <button id="cancelLeave" class="submitButton">Cancel</button>
+    </div>
+</div>
+
+<div class="container mb-3">
+    <div class="text-center d-flex justify-content-center">
+        <input class="custom-button" type="button" id="readyButton" value="Ready" />
+    </div>
+    <div id="hideReadyBoxes">
+        <div class="text-center d-flex justify-content-center" id="playersContainer"></div>
+    </div>
+    <p id="playerCount"></p>
+    <p id="readyCount"></p>
+    <div class="hide" id="scoreboard">
+        <h2 class="text-center d-flex justify-content-center">Scoreboard</h2>
+    </div>
+    <div class="text-center d-flex justify-content-center">
+        <div class="row" id="playersAndScores"></div>
+    </div>
+</div>
+<hr />
+<div class="container d-flex justify-content-center" style="position:relative">
+    <div id="forAnimations" class="justify-content-center">
+        <div id="bombRecharge"></div>
+        <div id="getExtraPoints"></div>
+        <div id="getInvertedControls"></div>
+        <div id="looseShielded"></div>
+        <div id="getShielded"></div>
+        <div id="extraMaxBombCount"></div>
+        <div id="minusMaxBombCount"></div>
+    </div>
+    <div id="map">
+    </div>
+</div>
+<hr />
+
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script type="module" src="~/js/gameClient.js"></script>

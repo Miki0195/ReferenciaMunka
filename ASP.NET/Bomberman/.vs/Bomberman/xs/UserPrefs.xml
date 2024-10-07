@@ -1,0 +1,78 @@
+﻿<Properties StartupConfiguration="{437702F6-6FD6-42B4-9F1E-9FE46750BD7B}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Bomberman/appsettings.json">
+    <Files>
+      <File FileName="Bomberman/appsettings.json" Line="10" Column="19" />
+      <File FileName="Bomberman/Views/Game/Games.cshtml" Line="1" Column="1" />
+      <File FileName="Bomberman/Views/Game/Create.cshtml" Line="1" Column="1" />
+      <File FileName="Bomberman/Views/Game/Play.cshtml" Line="44" Column="9" />
+      <File FileName="Bomberman/wwwroot/css/GameProba.css" Line="414" Column="6" />
+      <File FileName="Bomberman/wwwroot/js/site.js" />
+      <File FileName="Bomberman/Controllers/GameController.cs" />
+      <File FileName="Bomberman/Program.cs" />
+      <File FileName="Bomberman/Views/Profile/Login.cshtml" />
+      <File FileName="Bomberman/wwwroot/css/Login.css" />
+      <File FileName="Bomberman/Views/Profile/Profile.cshtml" />
+      <File FileName="Bomberman/Views/Profile/Register.cshtml" />
+      <File FileName="Bomberman/wwwroot/css/Register.css" />
+      <File FileName="Bomberman/wwwroot/css/site.css" />
+      <File FileName="Bomberman/wwwroot/css/Index.css" />
+      <File FileName="Bomberman/Models/SignalR/LobbyCreateViewModel.cs" Line="1" Column="1" />
+      <File FileName="Bomberman/wwwroot/css/Create.css" />
+      <File FileName="Bomberman/Models/Database/DbInitializer.cs" Line="13" Column="1" />
+      <File FileName="Bomberman/Views/_ViewImports.cshtml" />
+      <File FileName="Bomberman/Views/_ViewStart.cshtml" />
+      <File FileName="Bomberman/Views/Home/Index.cshtml" />
+      <File FileName="Bomberman/Views/Shared/_Layout.cshtml" />
+      <File FileName="Bomberman/wwwroot/css/Games.css" Line="1" Column="1" />
+      <File FileName="Bomberman/wwwroot/js/gamesList.js" />
+      <File FileName="Bomberman/wwwroot/css/GamesList.css" />
+      <File FileName="Bomberman/wwwroot/js/createGame.js" />
+      <File FileName="Bomberman/Models/Characters/Player.cs" Line="29" Column="21" />
+      <File FileName="Bomberman/Services/UserService.cs" />
+      <File FileName="Bomberman/Controllers/HomeController.cs" />
+      <File FileName="Bomberman/Controllers/ProfileController.cs" />
+      <File FileName="Bomberman/Models/Characters/Monster.cs" />
+      <File FileName="Bomberman/Models/Characters/Character.cs" />
+      <File FileName="Bomberman/Models/Map/GameModel.cs" Line="103" Column="21" />
+      <File FileName="Bomberman/Models/SignalR/LobbyDisplayViewModel.cs" Line="1" Column="1" />
+      <File FileName="Bomberman/Models/SignalR/GameHub.cs" Line="210" Column="1" />
+      <File FileName="Bomberman/Models/ErrorViewModel.cs" />
+      <File FileName="Bomberman/Models/Map/IGameModel.cs" Line="22" Column="42" />
+      <File FileName="Bomberman/wwwroot/css/Profile.css" />
+      <File FileName="Bomberman/Maps/Temple.txt" Line="12" Column="16" />
+      <File FileName="Bomberman/Maps/EmptyTextFile.txt" Line="11" Column="16" />
+      <File FileName="Bomberman/wwwroot/js/gameClient.js" Line="254" Column="40" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Bomberman">
+            <Node name="Bomberman">
+              <Node name="Maps" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Characters" expanded="True" />
+                <Node name="Map" expanded="True" />
+                <Node name="Profile" expanded="True" />
+                <Node name="SignalR" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Game" expanded="True" />
+              </Node>
+              <Node name="wwwroot">
+                <Node name="css" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Bomberman PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

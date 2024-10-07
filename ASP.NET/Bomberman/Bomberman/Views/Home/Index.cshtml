@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link rel="stylesheet" href="~/css/Index.css" asp-append-version="true" />
+
+<div class="text-center">
+    @if (User.Identity != null && User.Identity.IsAuthenticated)
+    {
+        <h1 class="welcome-text">Welcome back <strong>@User.Identity.Name</strong>!</h1>
+        <div>
+            <a href="@Url.Action("Logout", "Profile", new { area = "" })" class="btn btn-primary">Logout</a>
+            <a href="@Url.Action("Profile", "Profile", new { area = "" })" class="btn btn-primary">Profile</a>
+            <a href="@Url.Action("Games", "Game", new { area = "" })" class="btn btn-secondary">Game</a>
+        </div>
+    }
+    else
+    {
+        <h1 class="welcome-text">Warm Welcome to Bomberman</h1>
+        <div>
+            <a href="@Url.Action("Register", "Profile", new { area = "" })" class="btn btn-primary">Register</a>
+            <a href="@Url.Action("Login", "Profile", new { area = "" })" class="btn btn-secondary">Login</a>
+        </div>
+    }
+</div>
+
+<div class="game-description fade-in">
+    <h2>About Our Game</h2>
+    <p>"Bomberman" is a classic arcade-style game where players control a character who navigates through maze-like environments filled with obstacles and enemies.</p>
+    <p>The objective is to strategically place bombs to destroy obstacles, defeat enemies to win the game.</p>
+    <p>Players must use 'wasd' to move their character and place bombs with <i>space</i>. They need to avoid being caught in their own bomb explosions while outmaneuvering various enemies with unique movement patterns.</p>
+    <p>Our "Bomberman" features power-ups that enhance player abilities, challenging maps, and multiplayer modes for competitive gameplay.</p>
+</div>

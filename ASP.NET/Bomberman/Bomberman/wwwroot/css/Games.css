@@ -1,0 +1,143 @@
+﻿.cont {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto 100px;
+    background: #fff;
+}
+
+.game-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.lobby-info {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.lobby-item{
+    font-weight: normal;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 4px;
+}
+
+.separator{
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.create-game-container {
+    margin-top: 20px;
+}
+
+.no-games {
+    font-size: 26px;
+    text-align: center;
+    color: #6c757d;
+    margin-top: 20px;
+}
+
+.custom-button, .custom-button:hover, custom-button-main, custom-button-main:hover {
+    color: #fff; 
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+    .custom-button:hover {
+        background-color: #333;
+        transform: translateY(-3px);
+    }
+
+.custom-button-main,
+.custom-button-main:hover,
+.custom-button-main:visited,
+.custom-button-main:active {
+    color: #fff;
+    text-decoration: none; 
+}
+
+.custom-button-main {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+    .custom-button-main:hover {
+        background-color: #333;
+        transform: translateY(-3px);
+    }
+
+@media screen and (max-width: 770px) {
+    .lobby-item {
+        display: block;
+        padding-bottom: 5px;
+        padding-left: 0px;
+    }
+
+    .separator {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    .lobby-item {
+        display: block;
+        padding-bottom: 5px;
+        font-size: 12px;
+        padding-left: 0px;
+    }
+
+    .lobby-info {
+        font-size: 12px;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .custom-button, .custom-button-main {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,66 @@
+﻿@using Bomberman.Models.Database
+@model IEnumerable<Score>;
+@{
+    ViewData["Title"] = "Profile";
+    ViewBag.NoData = "Nothing to display, start playing ;)";
+}
+
+<link rel="stylesheet" href="~/css/Profile.css" asp-append-version="true" />
+
+<h2>Hi <i>@User.Identity!.Name</i>, this is your profile!</h2>
+<h2 class="mb-2">Scores and Analytics</h2>
+<table class="table table-striped">
+    @if(Model.Count() == 0)
+    {
+        <tr>
+            <td class="text-center" colspan="2"><b>@ViewBag.NoData</b></td>
+        </tr>
+    }
+    else
+    {
+        <tr>
+            <td>Average points</td>
+            <td>@Math.Round(Model.Average(x => x.Points), 3)</td>
+        </tr>
+        <tr>
+            <td>Average placement</td>
+            <td>@Math.Round(Model.Select(x => int.Parse(x.Context!.Split(';')[1].Split(':')[1])).Average(), 3)</td>
+        </tr>
+        <tr>
+            <td>Win %</td>
+            <td>@(Math.Round((float)Model.Where(x => x.Context!.Split(';')[3].Split(':')[1] == "True").Count() / (float)Model.Count(), 2) * 100)%</td>
+        </tr>
+        <tr>
+            <td>Leave %</td>
+            <td>@(Math.Round((float)Model.Where(x => x.Context!.Split(';')[4].Split(':')[1] != "False").Count() / (float)Model.Count(), 2) * 100)%</td>
+        </tr>
+    }
+</table>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Points</th>
+            <th>Placement</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Count() == 0)
+        {
+            <tr>
+                <td class="text-center" colspan="3"><b>@ViewBag.NoData</b></td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var s in Model)
+            {
+                <tr>
+                    <td>@s.Date.ToString("yyyy:MM:dd")</td>
+                    <td>@s.Points</td>
+                    <td>@s.Context!.Split(';')[1].Split(':')[1]</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

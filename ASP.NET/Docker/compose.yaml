@@ -1,0 +1,36 @@
+volumes:
+  data:
+
+services:
+  bomberman:
+    image: danimre/nitro-knights:bomberman
+    container_name: BombermanWeb
+    build:
+      context: .
+      target: final
+    depends_on:
+      - db
+    ports:
+      - 8080:8080
+    networks:
+      - network1
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+  db:
+    image: danimre/nitro-knights:mariadb
+    container_name: MariaDB
+    environment:
+      MYSQL_ROOT_PASSWORD: 2002
+      MYSQL_DATABASE: Local_DB
+      MYSQL_USER: imre
+      MYSQL_PASSWORD: 2002
+    volumes:
+      - data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - network1
+
+networks:
+  network1:
+

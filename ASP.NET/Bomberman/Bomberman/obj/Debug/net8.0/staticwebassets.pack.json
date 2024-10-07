@@ -1,0 +1,501 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/obj/Debug/net8.0/scopedcss/projectbundle/Bomberman.bundle.scp.css",
+      "PackagePath": "staticwebassets/Bomberman.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/Bomb0.png",
+      "PackagePath": "staticwebassets/assets/Bomb0.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/Bomb1.png",
+      "PackagePath": "staticwebassets/assets/Bomb1.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/Bomb2.png",
+      "PackagePath": "staticwebassets/assets/Bomb2.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/FireH1.png",
+      "PackagePath": "staticwebassets/assets/FireH1.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/FireH2.png",
+      "PackagePath": "staticwebassets/assets/FireH2.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/FireH3.png",
+      "PackagePath": "staticwebassets/assets/FireH3.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/FireH4.png",
+      "PackagePath": "staticwebassets/assets/FireH4.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/FireL1.png",
+      "PackagePath": "staticwebassets/assets/FireL1.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/FireL2.png",
+      "PackagePath": "staticwebassets/assets/FireL2.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/FireL3.png",
+      "PackagePath": "staticwebassets/assets/FireL3.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/FireL4.png",
+      "PackagePath": "staticwebassets/assets/FireL4.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/FireM0.png",
+      "PackagePath": "staticwebassets/assets/FireM0.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/FireM1.png",
+      "PackagePath": "staticwebassets/assets/FireM1.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/FireM2.png",
+      "PackagePath": "staticwebassets/assets/FireM2.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/FireM3.png",
+      "PackagePath": "staticwebassets/assets/FireM3.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/FireM4.png",
+      "PackagePath": "staticwebassets/assets/FireM4.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/bad.png",
+      "PackagePath": "staticwebassets/assets/bad.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/box.png",
+      "PackagePath": "staticwebassets/assets/box.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/field1.png",
+      "PackagePath": "staticwebassets/assets/field1.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/field2.png",
+      "PackagePath": "staticwebassets/assets/field2.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/good.png",
+      "PackagePath": "staticwebassets/assets/good.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/monster_down.png",
+      "PackagePath": "staticwebassets/assets/monster_down.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/monster_left.png",
+      "PackagePath": "staticwebassets/assets/monster_left.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/monster_right.png",
+      "PackagePath": "staticwebassets/assets/monster_right.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/monster_up.png",
+      "PackagePath": "staticwebassets/assets/monster_up.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player1.png",
+      "PackagePath": "staticwebassets/assets/player1.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player2.png",
+      "PackagePath": "staticwebassets/assets/player2.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player3.png",
+      "PackagePath": "staticwebassets/assets/player3.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player4.png",
+      "PackagePath": "staticwebassets/assets/player4.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player_christmas_left.png",
+      "PackagePath": "staticwebassets/assets/player_christmas_left.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player_christmas_right.png",
+      "PackagePath": "staticwebassets/assets/player_christmas_right.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player_christmas_up.png",
+      "PackagePath": "staticwebassets/assets/player_christmas_up.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player_crown_left.png",
+      "PackagePath": "staticwebassets/assets/player_crown_left.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player_crown_right.png",
+      "PackagePath": "staticwebassets/assets/player_crown_right.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player_crown_up.png",
+      "PackagePath": "staticwebassets/assets/player_crown_up.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player_hat_left.png",
+      "PackagePath": "staticwebassets/assets/player_hat_left.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player_hat_right.png",
+      "PackagePath": "staticwebassets/assets/player_hat_right.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player_hat_up.png",
+      "PackagePath": "staticwebassets/assets/player_hat_up.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player_highhat_left.png",
+      "PackagePath": "staticwebassets/assets/player_highhat_left.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player_highhat_right.png",
+      "PackagePath": "staticwebassets/assets/player_highhat_right.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/player_highhat_up.png",
+      "PackagePath": "staticwebassets/assets/player_highhat_up.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/shield.png",
+      "PackagePath": "staticwebassets/assets/shield.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/wall1.png",
+      "PackagePath": "staticwebassets/assets/wall1.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/wall2.png",
+      "PackagePath": "staticwebassets/assets/wall2.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/wall3.png",
+      "PackagePath": "staticwebassets/assets/wall3.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/assets/wall4.png",
+      "PackagePath": "staticwebassets/assets/wall4.png"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/css/Create.css",
+      "PackagePath": "staticwebassets/css/Create.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/css/GameProba.css",
+      "PackagePath": "staticwebassets/css/GameProba.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/css/Games.css",
+      "PackagePath": "staticwebassets/css/Games.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/css/GamesList.css",
+      "PackagePath": "staticwebassets/css/GamesList.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/css/Index.css",
+      "PackagePath": "staticwebassets/css/Index.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/css/Login.css",
+      "PackagePath": "staticwebassets/css/Login.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/css/Profile.css",
+      "PackagePath": "staticwebassets/css/Profile.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/css/Register.css",
+      "PackagePath": "staticwebassets/css/Register.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/js/createGame.js",
+      "PackagePath": "staticwebassets/js/createGame.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/js/gameClient.js",
+      "PackagePath": "staticwebassets/js/gameClient.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/js/gamesList.js",
+      "PackagePath": "staticwebassets/js/gamesList.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/microsoft/signalr/dist/browser/signalr.js",
+      "PackagePath": "staticwebassets/lib/microsoft/signalr/dist/browser/signalr.js"
+    },
+    {
+      "Id": "/Users/buchsbaummiklos/Documents/Elte/4.Félév/Szoftvertechnológia/nitro-knights/Bomberman/Bomberman/wwwroot/lib/microsoft/signalr/dist/browser/signalr.min.js",
+      "PackagePath": "staticwebassets/lib/microsoft/signalr/dist/browser/signalr.min.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Bomberman.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Bomberman.props",
+      "PackagePath": "build\\Bomberman.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Bomberman.props",
+      "PackagePath": "buildMultiTargeting\\Bomberman.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Bomberman.props",
+      "PackagePath": "buildTransitive\\Bomberman.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

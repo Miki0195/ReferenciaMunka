@@ -1,0 +1,43 @@
+﻿@model Bomberman.Models.Profile.Register
+@{
+    ViewData["Title"] = "Register";
+}
+
+<link rel="stylesheet" href="~/css/Register.css" asp-append-version="true" />
+
+
+@using (Html.BeginForm("Register", "Profile", FormMethod.Post))
+{
+     <div class="cont">
+         <div class="form sign-in">
+             <h2 class="text-center">Registration</h2>
+             <label>
+                 <label for="Username" class="form-label">Username</label>
+                 <input type="text" class="form-control" id="username" asp-for="Username">
+                 <span asp-validation-for="Username" class="text-danger"></span>
+             </label>
+             <label>
+                 <label for="Password" class="form-label">Password</label>
+                 <input type="password" class="form-control" id="password" asp-for="Password">
+                 <span asp-validation-for="Password" class="text-danger"></span>
+             </label>
+             <label>
+                 <label for="PasswordAgain" class="form-label">Password Again</label>
+                 <input type="password" class="form-control" id="passwordAgain" asp-for="PasswordAgain">
+                 <span asp-validation-for="PasswordAgain" class="text-danger"></span>
+             </label>
+             <label>
+                 <label for="Email" class="form-label">Email</label>
+                 <input type="email" class="form-control" id="email" asp-for="Email">
+                 <span asp-validation-for="Email" class="text-danger"></span>
+             </label>
+             <label>
+                 <label for="signup" class="already-registered"><a asp-area="" asp-controller="Profile" asp-action="Login">Are you already registered?</a></label>
+             </label>
+             <label>
+                 <button class="submit" type="submit">Register</button>
+             </label>
+         </div>
+     </div>
+}
+

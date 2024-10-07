@@ -1,0 +1,32 @@
+﻿@model Bomberman.Models.Profile.Login
+@{
+    ViewData["Title"] = "Login";
+}
+<link rel="stylesheet" href="~/css/Login.css" asp-append-version="true" />
+
+@using (Html.BeginForm("Login", "Profile", FormMethod.Post))
+{
+    <div class="cont">
+        <div class="form sign-in">
+            <h2 class="text-center">@(Context.User.Identity!.IsAuthenticated ? "Welcome back, " + Context.User.Identity.Name : "Login")</h2>
+            <label>
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" asp-for="Username">
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </label>
+            <label>
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" asp-for="Password">
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </label>
+            <label>
+                <label for="signup" class="already-registered"><a asp-area="" asp-controller="Profile" asp-action="Register">Are you not registered?</a></label>
+            </label>
+            <label>
+                <button type="submit" class="submit">Sign In</button>
+            </label>
+            <input id="returnUrl" name="returnUrl" asp-for="ReturnUrl" type="hidden" />
+            <p class="text-danger text-center">@Model.ErrorMessage</p>
+        </div>
+    </div>
+}
