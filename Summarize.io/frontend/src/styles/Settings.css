@@ -1,0 +1,59 @@
+.settings-panel {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.settings-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #374151;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.settings-description {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.settings-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.settings-option {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.settings-option input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.1rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+
+.settings-option-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-label {
+  font-weight: 500;
+  font-size: 0.9375rem;
+  color: #374151;
+}
+
+.settings-help {
+  font-size: 0.8125rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+} 

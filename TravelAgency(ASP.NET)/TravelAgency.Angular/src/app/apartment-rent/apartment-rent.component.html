@@ -1,0 +1,89 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{building.name}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item>
+        <strong>Város:</strong> {{building.city.name}}
+      </mat-list-item>
+      <mat-list-item>
+        <strong>Tengerpart távolság:</strong> {{building.seaDistance}} méter
+      </mat-list-item>
+      <mat-list-item>
+        <strong>Tengerpart típus:</strong> {{building.shore | shoreType}}
+      </mat-list-item>
+      <mat-list-item>
+        <strong>Jellemzők:</strong> {{building.features | feature}}
+      </mat-list-item>
+    </mat-list>
+
+    <mat-divider></mat-divider>
+
+    <p><strong>{{apartment.room}}</strong> {{apartment.comment}}</p>
+    <p><strong>Fordulónap:</strong> {{apartment.turnday | dayOfWeek}}</p>
+    <p><strong>Ár:</strong> {{apartment.price}} EUR/éjszaka</p>
+
+    <mat-divider></mat-divider>
+
+    <form *ngIf="!successMessage" [formGroup]="rentForm" (ngSubmit)="onSubmit()">
+      <h3>Személyes adatok:</h3>
+
+      <div class="form-row">
+        <mat-form-field appearance="fill">
+          <mat-label>Név</mat-label>
+          <input matInput formControlName="name">
+          <mat-error *ngIf="rentForm.get('name')?.invalid">{{getErrorMessage('name')}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Számlázási cím</mat-label>
+          <input matInput formControlName="address">
+          <mat-error *ngIf="rentForm.get('address')?.invalid">{{getErrorMessage('address')}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>E-mail cím</mat-label>
+          <input matInput formControlName="email" type="email" [readonly]="true">
+          <mat-error *ngIf="rentForm.get('email')?.invalid">{{getErrorMessage('email')}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Telefonszám</mat-label>
+          <input matInput formControlName="phoneNumber">
+          <mat-error *ngIf="rentForm.get('phoneNumber')?.invalid">{{getErrorMessage('phoneNumber')}}</mat-error>
+        </mat-form-field>
+      </div>
+
+      <h3>Foglalási adatok:</h3>
+
+      <div class="form-row">
+
+        <mat-form-field appearance="fill">
+          <mat-label>Foglalás kezdete</mat-label>
+          <input matInput [matDatepicker]="startPicker" [matDatepickerFilter]="startDateFilter" formControlName="startDate">
+          <mat-datepicker-toggle matSuffix [for]="startPicker"></mat-datepicker-toggle>
+          <mat-datepicker #startPicker></mat-datepicker>
+          <mat-error *ngIf="rentForm.get('startDate')?.invalid">{{getErrorMessage('startDate')}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Foglalás vége</mat-label>
+          <input matInput [matDatepicker]="endPicker" [matDatepickerFilter]="endDateFilter" formControlName="endDate">
+          <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+          <mat-datepicker #endPicker></mat-datepicker>
+          <mat-error *ngIf="rentForm.get('endDate')?.invalid">{{getErrorMessage('endDate')}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="button-container">
+        <button mat-raised-button color="primary" type="submit" [disabled]="rentForm.invalid">Foglalás</button>
+      </div>
+    </form>
+    <div *ngIf="errorMessage" class="alert" role="alert">
+      {{errorMessage}}
+    </div>
+    <div *ngIf="successMessage" class="success">
+      {{successMessage}}
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>ELTE.TravelAgency.Shared</RootNamespace>
+    <Authors>Máté Cserép</Authors>
+    <Company>ELTE Eötvös Loránd University, Faculty of Informatics</Company>
+  </PropertyGroup>
+
+</Project>

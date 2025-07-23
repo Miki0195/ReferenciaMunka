@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TESSERACT_LANGUAGE=hun
+    mem_limit: 4g  # Allocate more memory for NLP models
+    cpus: 2  # Allocate 2 CPU cores for better performance
+    restart: unless-stopped
+    command: uvicorn app.main:app --host 0.0.0.0 --reload
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    restart: unless-stopped
+    depends_on:
+      - backend 

@@ -1,0 +1,101 @@
+﻿@using ELTE.TravelAgency.Admin.Blazor.Utils
+@using ELTE.TravelAgency.Admin.Model
+@using ELTE.TravelAgency.Shared.Models
+
+@inject NavigationManager Navigation
+@inject ITravelAgencyModel Model
+
+<!-- Data Grid -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Város</th>
+            <th>Tengerpart távolság</th>
+            <th>Tengerpart</th>
+            <th>Jellemzők</th>
+            <th>Hosszúság</th>
+            <th>Szélesség</th>
+            <th>Megjegyzés</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var building in Model.Buildings)
+        {
+            <tr @onclick="() => SelectBuilding(building)" class="@GetRowClass(building)">
+                <td>@building.Name</td>
+                <td>@building.City</td>
+                <td>@ConvertSeaDistance(building.SeaDistance)</td>
+                <td>@ConvertShoreType(building.Shore)</td>
+                <td>@ConvertFeatures(building.Features)</td>
+                <td>@building.LocationX</td>
+                <td>@building.LocationY</td>
+                <td>@building.Comment</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Buttons -->
+<div class="d-flex justify-content-start mb-3">
+    <button class="btn btn-primary me-2" @onclick="AddBuilding">Új hozzáadása</button>
+    <button class="btn btn-secondary me-2" @onclick="UpdateBuilding" disabled="@(selectedBuilding == null)">Kijelölt módosítása</button>
+    <button class="btn btn-danger" @onclick="DeleteBuilding" disabled="@(selectedBuilding == null)">Kijelölt törlése</button>
+</div>
+
+@code {
+    [Parameter]
+    public EventCallback<BuildingDto> OnBuildingSelected { get; set; }
+
+    /// <summary>
+    /// Kiválasztott épület
+    /// </summary>
+    private BuildingDto? selectedBuilding;
+
+    private void AddBuilding() { Navigation.NavigateTo("/buildings/add"); }
+    private void UpdateBuilding() { Navigation.NavigateTo($"/buildings/edit/{selectedBuilding!.Id}"); }
+    private void DeleteBuilding()
+    {
+        if (selectedBuilding == null) return;
+        Model.DeleteBuilding(selectedBuilding);
+    }
+    private void SelectBuilding(BuildingDto building)
+    {
+        selectedBuilding = building;
+        OnBuildingSelected.InvokeAsync(building);
+    }
+    private string GetRowClass(BuildingDto building) => building == selectedBuilding ? "table-active" : "";
+
+    private string ConvertSeaDistance(int distance)
+    {
+        if (distance > 1000)
+            return $"{distance / 1000} km";
+        else
+            return $"{distance} m";
+    }
+
+    private string ConvertShoreType(ShoreTypeDto shore)
+    {
+        int index = (int)shore;
+
+        if (index < 0 || index >= SharedData.ShoreNames.Length)
+            return "";
+
+        // megfelelő elnevezést visszaadjuk
+        return SharedData.ShoreNames[index];
+    }
+
+    private string ConvertFeatures(FeatureDto[] features)
+    {
+        string result = string.Empty;
+
+        for (int featureIndex = 0; featureIndex < features.Length && featureIndex < SharedData.FeatureNames.Length; featureIndex++)
+            if (features[featureIndex].IsAvailable)
+                result += SharedData.FeatureNames[features[featureIndex].Id] + ", "; // a jellemzőket összerakjuk
+
+        if (result.Length > 0)
+            return result.Substring(0, result.Length - 2); // a megfelelő szöveget visszaadjuk
+        else
+            return string.Empty;
+    }
+}

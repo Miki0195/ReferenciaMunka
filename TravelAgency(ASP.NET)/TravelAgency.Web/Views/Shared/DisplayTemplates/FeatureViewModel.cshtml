@@ -1,0 +1,30 @@
+﻿@model ICollection<FeatureViewModel>
+
+@* megadjuk, hogyan jelenjen meg a tengerpart típus *@
+
+@{
+    Func<ICollection<FeatureViewModel>, string> featureDisplayName = features =>
+    {
+        var featureTexts = new List<string>();
+        foreach (var feature in features)
+        {
+            if (!feature.IsAvailable)
+                continue;
+
+            if (feature.Id == 0)
+                featureTexts.Add("főút");
+            if (feature.Id == 1)
+                featureTexts.Add("parti szolgálat");
+            if (feature.Id == 2)
+                featureTexts.Add("úszómedence");
+            if (feature.Id == 3)
+                featureTexts.Add("kert");
+            if (feature.Id == 4)
+                featureTexts.Add("saját parkoló");
+        }
+
+        return string.Join(", ", featureTexts);
+    };
+}
+
+<span>@featureDisplayName(Model)</span>

@@ -1,0 +1,83 @@
+<div class="building-details-container" *ngIf="building">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{building.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item>
+          <strong>Város:</strong> {{building.city.name}}
+        </mat-list-item>
+        <mat-list-item>
+          <strong>Tengerpart távolság:</strong> {{building.seaDistance}} méter
+        </mat-list-item>
+        <mat-list-item>
+          <strong>Tengerpart típus:</strong> {{building.shore | shoreType}}
+        </mat-list-item>
+        <mat-list-item>
+          <strong>Jellemzők:</strong> {{building.features | feature}}
+        </mat-list-item>
+        <mat-list-item>
+          <strong>Elhelyezkedés:</strong>
+          <div class="map-container" *ngIf="center">
+            <google-map
+              *ngIf="loadingMap | async"
+              height="500px"
+              width="100%"
+              [zoom]="zoom"
+              [center]="center"
+              [options]="options"
+            >
+              <map-marker [position]="center"></map-marker>
+            </google-map>
+          </div>
+        </mat-list-item>
+      </mat-list>
+
+      <mat-card class="description-card">
+        <mat-card-content>
+          <strong>Leírás:</strong> {{building.comment}}
+        </mat-card-content>
+      </mat-card>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Képek</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div *ngIf="imagesLoaded" class="image-gallery">
+        <mat-grid-list cols="4" rowHeight="1:0.7" *ngIf="images.length > 0">
+          <mat-grid-tile *ngFor="let image of images">
+            <img [src]="image" class="gallery-image" alt="szállás kép">
+          </mat-grid-tile>
+        </mat-grid-list>
+        <div *ngIf="images.length === 0">Nincs megjeleníthető kép</div>
+      </div>
+      <mat-spinner *ngIf="!imagesLoaded"></mat-spinner>
+    </mat-card-content>
+  </mat-card>
+
+  @if (!selectedApartment) {
+    <mat-card *ngFor="let apartment of building.apartments" class="apartment-card">
+      <mat-card-content>
+        <h3>{{apartment.room}}. szoba</h3>
+        <p>{{apartment.comment}}</p>
+        <p><strong>Fordulónap:</strong> {{apartment.turnday}}</p>
+        <p><strong>Ár:</strong> {{apartment.price}} EUR/éjszaka</p>
+      </mat-card-content>
+      <mat-card-actions>
+        @if (loggedIn){
+          <button mat-raised-button color="primary" (click)="rentApartment(apartment)">Szállás lefoglalása</button>
+        } @else {
+          <a class="mat-link" [routerLink]="['/login']" [queryParams]="{returnUrl: currentUrl}">Foglaláshoz kérjük jelentkezzen be!</a>
+        }
+      </mat-card-actions>
+    </mat-card>
+  } @else {
+    <app-apartment-rent [apartment]="selectedApartment!" [building]="building"></app-apartment-rent>
+    <button mat-button  class="close-button" (click)="closeRentComponent()">Bezárás</button>
+  }
+
+</div>

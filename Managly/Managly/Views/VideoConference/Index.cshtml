@@ -1,0 +1,182 @@
+﻿@using System.Security.Claims
+@{
+    ViewData["Title"] = "Video Conference";
+    // Get the current user ID directly in the view
+    var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="~/css/VideoConference/Index.css">
+
+<div id="toastContainer" class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1050;"></div>
+
+<div class="video-conference-wrapper">
+    <div class="video-conference-container">
+        <!-- Left Panel -->
+        <div class="side-panel left-panel">
+            <div class="panel-content glass-effect">
+                <div class="panel-header">
+                    <h2><i class="fas fa-users"></i>Start a Call</h2>
+                </div>
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="searchUsers" placeholder="Search for a contact...">
+                        <button id="clearSearch" class="clear-search-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Updated user selection interface -->
+                <div class="contact-selection">
+                    <div id="userResults" class="contact-results custom-scroll"></div>
+
+                    <div id="selectedContact" class="selected-contact-card hidden">
+                        <div class="contact-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3 id="selectedContactName">Contact Name</h3>
+                        </div>
+                        <button id="removeSelectedContact" class="icon-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <!-- Add waiting indicator to the left panel -->
+                    <div id="waitingIndicator" class="waiting-indicator hidden">
+                        <div class="waiting-pulse"></div>
+                        <div class="waiting-content">
+                            <div class="waiting-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="waiting-text">
+                                <h4>Waiting for response</h4>
+                                <div class="typing-indicator">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="emptySelection" class="empty-selection">
+                        <i class="fas fa-user-plus"></i>
+                        <p>Search and select a contact to call</p>
+                    </div>
+                </div>
+
+                <button id="startCallBtn" class="primary-btn call-btn hidden">
+                    <i class="fas fa-video"></i>
+                    <span>Start Video Call</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Video Area -->
+        <div class="main-video-area">
+            <div class="video-container glass-effect">
+                <div class="status-banner" id="callStatusBanner">
+                    <span id="callStatusText"></span>
+                </div>
+
+                <video id="remoteVideo" class="main-video" autoplay playsinline></video>
+                <video id="localVideo" class="main-video hidden" autoplay playsinline muted></video>
+
+                <div id="localVideoSmall" class="pip-video">
+                    <video id="selfView" autoplay playsinline muted></video>
+                </div>
+
+                <div id="noVideoText" class="no-video-placeholder">
+                    <div class="placeholder-content">
+                        <i class="fas fa-video-slash"></i>
+                        <p>No active video call</p>
+                    </div>
+                </div>
+
+                <!-- Moved incoming call UI here -->
+                <div id="incomingCall" class="incoming-call-main hidden">
+                    <div class="incoming-call-content">
+                        <div class="call-indicator">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <h3 id="callMessage"></h3>
+                        <button id="joinCallBtn" class="primary-btn accept-call">
+                            <i class="fas fa-phone"></i>
+                            <span>Accept Call</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="rejoinCall" class="incoming-call-main hidden">
+                    <div class="incoming-call-content">
+                        <div class="call-indicator">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <h3>You disconnected from an active call</h3>
+                        <button id="rejoinCallBtn" class="primary-btn accept-call">
+                            <i class="fas fa-phone"></i>
+                            <span>Rejoin Call</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="video-controls">
+                    <button id="muteAudioBtn" class="control-btn">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <button id="toggleVideoBtn" class="control-btn">
+                        <i class="fas fa-video"></i>
+                    </button>
+                    <button id="screenShareBtn" class="control-btn">
+                        <i class="fas fa-desktop"></i>
+                    </button>
+                    <button id="endCallBtn" class="control-btn end-call">
+                        <i class="fas fa-phone-slash"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="side-panel right-panel">
+            <div class="panel-content glass-effect">
+                <div class="panel-header">
+                    <h2><i class="fas fa-clock-rotate-left"></i>Recent Calls</h2>
+                </div>
+                <div class="recent-calls custom-scroll">
+                    <ul id="recentCallsList"></ul>
+                </div>
+
+                <div class="call-status">
+                    <div id="waitingRoom" class="waiting-room">
+                        <h4 id="waitingRoomText"></h4>
+                    </div>
+
+                    <div id="incomingCall" class="incoming-call" style="display: none;">
+                        <div class="incoming-call-content">
+                            <div class="call-indicator">
+                                <i class="fas fa-phone-volume"></i>
+                            </div>
+                            <h3 id="callMessage"></h3>
+                            <button id="joinCallBtn" class="primary-btn accept-call">
+                                <i class="fas fa-phone"></i>
+                                <span>Accept Call</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+<script id="videoConferenceScript" src="~/js/VideoConference/VideoConference.js" data-user-id="@currentUserId"></script>

@@ -1,0 +1,456 @@
+﻿.user-management-container {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Page Header */
+.page-header {
+    margin-bottom: 2rem;
+}
+
+.page-header h2 {
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+/* Search and Filter Section */
+.filters-section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.search-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.search-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.search-box {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #718096;
+    z-index: 2;
+}
+
+.search-input {
+    padding-left: 2.75rem;
+    height: 45px;
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+.search-input:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+}
+
+.filter-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.role-filter {
+    min-width: 200px;
+}
+
+.form-label {
+    font-size: 0.875rem;
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+}
+
+.form-select {
+    height: 45px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s;
+}
+
+.form-select:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+}
+
+#clearFilters {
+    height: 45px;
+    padding: 0 1.5rem;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+#clearFilters:hover {
+    background-color: #e53e3e;
+    color: white;
+    border-color: #e53e3e;
+}
+
+/* Table Styles */
+.user-table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.table th {
+    background: #f8fafc;
+    color: #4a5568;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    padding: 1rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.sort-icon {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.sort-icon:hover {
+    color: #2b6cb0;
+}
+
+.table td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #6c757d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 12px;
+    overflow: hidden;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 0;
+    transition: all 0.2s ease;
+}
+
+.user-info:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Role Select Styles */
+.role-select {
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    padding: 0.5rem;
+    min-width: 140px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-danger {
+    background: #fff;
+    color: #e53e3e;
+    border: 1px solid #e53e3e;
+    transition: all 0.2s;
+}
+
+.btn-danger:hover {
+    background: #e53e3e;
+    color: #fff;
+}
+
+/* ====== Modal Customization ====== */
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    background: #343a40;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.modal-footer {
+    border-top: 1px solid #ddd;
+}
+
+.btn-close {
+    color: white;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+    .search-wrapper {
+        flex-direction: column;
+    }
+
+    .filter-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .role-filter {
+        width: 100%;
+    }
+
+    #clearFilters {
+        width: 100%;
+    }
+
+    .user-table {
+        font-size: 0.875rem;
+    }
+    
+    .user-avatar {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Add these to your existing CSS */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.sort-icon {
+    color: #718096;
+    transition: all 0.2s;
+}
+
+th div[data-sort]:hover .sort-icon {
+    color: #2d3748;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+/* Project badges styling */
+.project-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: #e2e8f0;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    color: #4a5568;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.project-badge:hover {
+    background-color: #4299e1;
+    color: white;
+    text-decoration: none;
+}
+
+/* Adjust table column widths */
+.table th:nth-child(1) { width: 20%; }
+.table th:nth-child(2) { width: 25%; }
+.table th:nth-child(3) { width: 25%; }
+.table th:nth-child(4) { width: 15%; }
+.table th:nth-child(5) { width: 15%; }
+
+/* User Profile Modal Styles */
+.user-profile-container {
+    padding: 1rem;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #4299e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-initial {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #6c757d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.profile-basic-info {
+    flex: 1;
+}
+
+.profile-basic-info .btn {
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.profile-basic-info .btn i {
+    font-size: 0.875rem;
+}
+
+/* Optional: Add hover effect */
+.profile-basic-info .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-basic-info h3 {
+    margin: 0;
+    color: #2d3748;
+    font-size: 1.5rem;
+}
+
+.detail-heading {
+    color: #4a5568;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: #4a5568;
+}
+
+.detail-item i {
+    width: 16px;
+    color: #718096;
+}
+
+/* Add these styles at the top of your existing CSS file */
+.form-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.header-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+}
+
+.header-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.form-header h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-header p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+}
+
+/* Add these styles at the top of your existing CSS file */
+.create-profile-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+}
+
+.create-profile-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+    color: white;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+.create-profile-btn i {
+    font-size: 1.1em;
+}

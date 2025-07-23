@@ -1,0 +1,110 @@
+﻿@using ELTE.TravelAgency.Admin.Blazor.Utils
+@using ELTE.TravelAgency.Admin.Model
+@using ELTE.TravelAgency.Shared.Models
+
+@inject ITravelAgencyModel Model
+
+<EditForm Model="Building" OnValidSubmit="SaveChanges">
+    <DataAnnotationsValidator />
+
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col">
+                <label for="buildingName">Név:</label>
+                <InputText id="buildingName" class="form-control" @bind-Value="Building.Name" />
+                <ValidationMessage For="@(() => Building.Name)" />
+            </div>
+            <div class="col">
+                <label for="buildingCity">Város:</label>
+                <select id="buildingCity" class="form-select" @bind="Building.City.Id">
+                    @foreach (var city in Model.Cities)
+                    {
+                        <option value="@city.Id">@city.Name</option>
+                    }
+                </select>
+                <ValidationMessage For="@(() => Building.City)" />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="seaDistance">Tengerpart távolság:</label>
+                <InputNumber id="seaDistance" type="number" class="form-control" @bind-Value="Building.SeaDistance" />
+                <ValidationMessage For="@(() => Building.SeaDistance)" />
+            </div>
+            <div class="col">
+                <label for="shoreType">Tengerpart típus:</label>
+                <select id="shoreType" class="form-select" @bind="Building.Shore">
+                    @foreach (ShoreTypeDto shore in Enum.GetValues(typeof(ShoreTypeDto)))
+                    {
+                        <option value="@shore">@SharedData.ShoreNames[(int)shore]</option>
+                    }
+                </select>
+                <ValidationMessage For="@(() => Building.Shore)" />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="locationX">Hosszúság:</label>
+                <InputNumber id="locationX" type="number" class="form-control" @bind-Value="Building.LocationX" />
+                <ValidationMessage For="@(() => Building.LocationX)" />
+            </div>
+            <div class="col">
+                <label for="locationY">Szélesség:</label>
+                <InputNumber id="locationY" type="number" class="form-control" @bind-Value="Building.LocationY" />
+                <ValidationMessage For="@(() => Building.LocationY)" />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="comment">Megjegyzés:</label>
+                <InputTextArea id="comment" class="form-control" @bind-Value="Building.Comment" />
+                <ValidationMessage For="@(() => Building.Comment)" />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col">
+                <label>Jellemzők:</label>
+                @foreach (var feature in Building.Features)
+                {
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="@feature.Id" @bind="feature.IsAvailable" />
+                        <label class="form-check-label" for="@feature.Id">@SharedData.FeatureNames[feature.Id]</label>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-end">
+                <button type="submit" class="btn btn-primary me-2">Mentés</button>
+                <button type="button" class="btn btn-secondary" @onclick="CancelChanges">Mégse</button>
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    [Parameter]
+    [EditorRequired]
+    public required BuildingDto Building { get; set; }
+
+    [Parameter]
+    public EventCallback OnSave { get; set; }
+
+    [Parameter]
+    public EventCallback OnCancel { get; set; }
+
+    private async Task SaveChanges()
+    {
+        await OnSave.InvokeAsync();
+    }
+
+    private async Task CancelChanges()
+    {
+        await OnCancel.InvokeAsync();
+    }
+}

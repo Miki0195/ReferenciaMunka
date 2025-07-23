@@ -1,0 +1,2 @@
+web: python manage.py migrate && python update_credentials.py && gunicorn backend.wsgi
+release: python update_credentials.py

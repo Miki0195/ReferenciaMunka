@@ -1,0 +1,64 @@
+﻿@using ELTE.TravelAgency.Admin.Blazor.ViewModels
+@using ELTE.TravelAgency.Admin.Model
+
+@inject NavigationManager Navigation
+@inject ITravelAgencyModel Model
+@inject IJSRuntime JS
+
+@page "/login"
+
+<h3>Bejelentkezés</h3>
+
+<EditForm Model="loginModel" OnValidSubmit="HandleLogin">
+    <DataAnnotationsValidator />
+
+    <div class="container">
+        @if (loginFailed)
+        {
+            <div class="alert alert-danger" role="alert">
+                A bejelentkezés sikertelen!
+            </div>
+        }
+
+        <div class="row mb-3">
+            <div class="col">
+                <label for="email">Email cím:</label>
+                <InputText id="email" class="form-control" @bind-Value="loginModel.Email" />
+                <ValidationMessage For="@(() => loginModel.Email)" />
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label for="password">Jelszó:</label>
+                <InputText id="password" type="password" class="form-control" @bind-Value="loginModel.Password" />
+                <ValidationMessage For="@(() => loginModel.Password)" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-end">
+                <button type="submit" class="btn btn-primary me-2">Bejelentkezés</button>
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    private LoginViewModel loginModel = new();
+    private bool loginFailed = false;
+
+    private async Task HandleLogin()
+    {
+        // Access token alapú authentikáció használata
+        bool isAuthenticated = await Model.LoginAsync(loginModel.Email, loginModel.Password, useCookies: false);
+
+        if (isAuthenticated)
+        {
+            loginFailed = false;
+            Navigation.NavigateTo("/");
+        }
+        else
+        {
+            loginFailed = true;
+        }
+    }
+}

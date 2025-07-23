@@ -1,0 +1,139 @@
+@using ELTE.Cinema.Web.Models
+@model ELTE.Cinema.Web.Models.ReservationPageViewModel
+
+
+<h1>Create reservation</h1>
+
+@{
+    var viewData = new ViewDataDictionary(this.ViewData)
+     {
+         { "showMovieDetails", true },
+         { "showReservationLink", false}  // Config ViewData
+     };
+}
+
+<partial name="ScreeningDetailComponent" model="Model.ScreeningViewModel" view-data="viewData" />
+
+<h2>Reservation details</h2>
+
+<form id="reservationForm">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input asp-for="ReservationViewModel!.Name" type="text" class="form-control" id="name" />
+        <span class="text-danger" asp-validation-for="ReservationViewModel!.Name"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone:</label>
+        <input asp-for="ReservationViewModel!.Phone" type="tel" class="form-control" id="phone" />
+        <span class="text-danger" asp-validation-for="ReservationViewModel!.Phone"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input asp-for="ReservationViewModel!.Email" type="email" class="form-control" id="email" />
+        <span class="text-danger" asp-validation-for="ReservationViewModel!.Email"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="comment" class="form-label">Comment <i>(optional):</i></label>
+        <textarea asp-for="ReservationViewModel!.Comment" class="form-control" rows="3" id="comment"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Seats:</label>
+        <!-- Generate seats table -->
+
+        <table class="table table-bordered table-secondary table-layout-fixed fw-bold" style="table-layout: fixed; width: 100%;">
+            <!-- Generate header -->
+            <thead>
+                <tr class="text-center">
+                    <td></td>
+                    @for (int i = 1; i <= Model.ScreeningViewModel.Room.Columns; i++)
+                    {
+                        <td>@i</td>
+                        if (i == Model.ScreeningViewModel.Room.Columns / 2)
+                        {
+                            <td></td>
+                        }
+                    }
+                    <td></td>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                @for (int i = 1; i <= Model.ScreeningViewModel.Room.Rows; i++)
+                {
+                    <tr>
+                        <td class="text-start">@i</td>
+                        @for (int j = 1; j <= Model.ScreeningViewModel.Room.Columns; j++)
+                        {
+                            var seat = Model.SeatViewModels.FirstOrDefault(s => s.Row == i && s.Column == j);
+                            string cssClass;
+                            string toolTip;
+                            switch (seat?.Status)
+                            {
+                                case SeatViewModelStatus.Reserved:
+                                    cssClass = "table-warning text-center";
+                                    toolTip = $"Row: {i} Column: {j} Status: Unavailable";
+                                    break;
+                                case SeatViewModelStatus.Selected:
+                                    cssClass = "table-success text-center";
+                                    toolTip = $"Row: {i} Column: {j} Status: Selected";
+                                    break;
+                                default:
+                                    cssClass = "table-light text-center";
+                                    toolTip = $"Row: {i} Column: {j} Status: Free";
+                                    break;
+                            }
+
+                            <td class="@cssClass" title="@toolTip" data-seatRow="@i" data-seatColumn="@j"
+                                data-status=@(seat?.Status ?? SeatViewModelStatus.Free)></td>
+
+                            if (j == Model.ScreeningViewModel.Room.Columns / 2)
+                            {
+                                <td></td>
+                            }
+                        }
+                        <td class="text-end">@i</td>
+                    </tr>
+                }
+
+            </tbody>
+
+            <tfoot>
+                <tr class="text-center">
+                    <td></td>
+                    @for (int i = 1; i <= Model.ScreeningViewModel.Room.Columns; i++)
+                    {
+                        <td>@i</td>
+                        if (i == Model.ScreeningViewModel.Room.Columns / 2)
+                        {
+                            <td></td>
+                        }
+                    }
+                    <td></td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+        <div class="d-flex justify-content-between ">
+            <p class="text-danger"></p>
+            <p>Selected seats: <i><span id="selected-count">0</span> / @Model.MaximumNumberOfSeats</i></p>
+        </div>
+
+    </div>
+</form>
+
+<button id="reserveButton" class="btn btn-primary">Submit</button>
+
+<div id="screeningId" data-screeningId="@Model.ScreeningViewModel.Id"></div>
+<div id="maximumNumberOfSeats" data-maximumnumberofseats="@Model.MaximumNumberOfSeats"></div>
+@section Scripts
+{
+    <!-- use jQuery Validation for client validation -->
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/reservation.js"></script>
+}

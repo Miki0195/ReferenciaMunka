@@ -1,0 +1,17 @@
+h1, h2, h3, h4, h5 {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+.text-underline-hover {
+  text-decoration: none;
+}
+
+.text-underline-hover:hover {
+  text-decoration: underline;
+}
+
+.table-layout-fixed {
+  width: 100%;
+  table-layout: fixed;
+}

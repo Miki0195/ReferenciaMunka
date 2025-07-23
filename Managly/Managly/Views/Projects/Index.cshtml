@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<link rel="stylesheet" href="~/css/Projects/Index.css">
+
+<div class="projects-container">
+    @await Html.PartialAsync("_ProjectsSidebar")
+
+    <div class="projects-content" id="projectsContent">
+        <div class="welcome-message">
+            <i class="bi bi-folder-symlink display-1 mb-3"></i>
+            <h3>Welcome to Projects Management</h3>
+            <p class="text-muted">Select a project from the sidebar to view its details</p>
+        </div>
+    </div>
+</div>
+
+@*@if (ViewBag.IsAdmin)
+    {
+        @await Html.PartialAsync("_CreateProjectModal")
+    }*@
+
+@await Html.PartialAsync("_TaskDetailsModal")
+@await Html.PartialAsync("_CreateTaskModal")
+@await Html.PartialAsync("_AddMembersModal")
+@await Html.PartialAsync("_DeleteConfirmationModal")
+@await Html.PartialAsync("_ManageMembersModal")
+@await Html.PartialAsync("_EditProjectModal")
+@await Html.PartialAsync("_RestoreProjectModal")
+@await Html.PartialAsync("_AllActivitiesModal")
+
+<div id="toastContainer" class="toast-container position-fixed top-0 end-0 p-3"></div>
+
+@section Scripts {
+    <script src="~/js/Projects/Index.js"></script>
+} 

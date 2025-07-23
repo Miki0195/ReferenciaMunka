@@ -1,0 +1,54 @@
+﻿@using ELTE.TravelAgency.Admin.Blazor.Components
+@using ELTE.TravelAgency.Admin.Model
+@using ELTE.TravelAgency.Shared.Models
+
+@inject NavigationManager Navigation
+@inject ITravelAgencyModel Model
+
+@page "/buildings/add"
+
+<h3>Épület hozzáadása</h3>
+
+@if (isInitialized)
+{
+    <BuildingEditor Building="building" OnSave="HandleSave" OnCancel="HandleCancel" />
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private BuildingDto building = null!;
+    private bool isInitialized = false;
+
+    protected override void OnInitialized()
+    {
+        if (Model.Cities.Count == 0)
+        {
+            Navigation.NavigateTo("/");
+            return;
+        }
+
+        building = new BuildingDto
+            {
+                Name = "",
+                City = Model.Cities.First(),
+                Comment = "",
+            };
+
+        // a navigáció aszinkron, a page render meg fog történni mindenképpen, 
+        // ezért kezeljük, hogy meg lehet-e megjeleníteni az épületet
+        isInitialized = true;
+    }
+
+    private void HandleSave()
+    {
+        Model.CreateBuilding(building);
+        Navigation.NavigateTo("/");
+    }
+
+    private void HandleCancel()
+    {
+        Navigation.NavigateTo("/");
+    }
+}

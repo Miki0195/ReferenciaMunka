@@ -1,0 +1,60 @@
+﻿@using ELTE.TravelAgency.Admin.Blazor.Components
+@using ELTE.TravelAgency.Admin.Model
+@using ELTE.TravelAgency.Shared.Models
+
+@inject ITravelAgencyModel Model
+
+@page "/"
+
+<h3>Épületek karbantartása</h3>
+
+<div class="container">
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <button class="btn btn-link nav-link" @onclick="LoadBuildings">Épületek lekérdezése</button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-link nav-link" @onclick="SaveBuildings" disabled="@(!isLoaded)">Épületek mentése</button>
+            </li>
+        </ul>
+    </nav>
+
+    @if(isLoading)
+    {
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border m-5" role="status">
+                <span class="visually-hidden">Épületek betöltése...</span>
+            </div>
+        </div>
+    }
+    else if (isLoaded)
+    {
+        <BuildingManager OnBuildingSelected="HandleBuildingSelection" />
+        <ImageManager Building="selectedBuilding" />
+    }
+</div>
+
+@code {
+    private BuildingDto? selectedBuilding;
+    private bool isLoading = false;
+    private bool isLoaded => Model.Cities.Any();
+
+    private async Task LoadBuildings()
+    {
+        isLoading = true;
+        await Model.LoadAsync();
+        isLoading = false;
+    }
+
+    private async Task SaveBuildings()
+    {
+        await Model.SaveAsync();
+    }
+
+    private void HandleBuildingSelection(BuildingDto building)
+    {
+        selectedBuilding = building;
+    }
+}

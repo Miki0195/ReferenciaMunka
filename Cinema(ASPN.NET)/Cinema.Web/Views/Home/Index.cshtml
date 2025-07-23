@@ -1,0 +1,44 @@
+﻿@using ELTE.Cinema.Web.Utility
+@model ELTE.Cinema.Web.Models.HomePageViewModel
+
+<h1>Welcome to ELTE Cinema!</h1>
+
+<h2>Latest movies</h2>
+
+<div class="row row-cols-md-5 row-cols-sm-1 g-4">
+    @foreach (var movie in Model.LatestMovies)
+    {
+        <div class="col">
+            <div class="card h-100">
+                <img class="card-img-top" src="@movie.Image.ToImgSrc()" alt="@movie.Title" />
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a class="stretched-link text-dark text-underline-hover" asp-action="Details" asp-controller="Movie" asp-route-movieId="@movie.Id">@movie.Title</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<hr class="mt-4">
+
+<h2>Today's program</h2>
+
+@if (!Model.TodayScreenings.Any())
+{
+    <div class="contentText">No screenings today, please visit us tomorrow!</div>
+}
+else
+{
+    var viewData = new ViewDataDictionary(this.ViewData)
+    {
+        { "showMovieDetails", true },
+        { "showReservationLink", true}  // config ViewData
+    };
+
+    foreach (var screening in Model.TodayScreenings)
+    {
+        <partial name="ScreeningDetailComponent" model="screening" view-data="viewData" />
+    }
+}

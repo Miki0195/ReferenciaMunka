@@ -1,0 +1,26 @@
+<div class="building-list-container">
+  <h1 class="main-title">Szállások</h1>
+
+  <div class="filter-section">
+    <mat-form-field appearance="outline">
+      <mat-label>Válassz várost</mat-label>
+      <mat-select [(ngModel)]="selectedCity" (selectionChange)="onSelectionChange($event)">
+        <mat-option [value]="null">Összes város</mat-option>
+        <mat-option *ngFor="let city of cities" [value]="city">
+          {{city.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="building-grid">
+    <mat-card class="building-card" *ngFor="let building of buildings" [routerLink]="['/buildings', building.id]">
+      <img mat-card-image [src]="building.mainImage" alt="{{ building.name }}">
+      <mat-card-content>
+        <h2 class="building-name">{{ building.name }}</h2>
+        <p class="building-city">{{ building.city.name }}</p>
+        <p class="building-description">{{ building.comment }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

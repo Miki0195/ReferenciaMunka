@@ -1,0 +1,100 @@
+﻿@model Managly.Models.CreateProfile
+
+<link rel="stylesheet" href="~/css/Admin/CreateProfile.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<div class="page-wrapper">
+    <div class="design-element"></div>
+    <div class="design-element-2"></div>
+
+    <div class="container">
+        <div class="form-container" data-aos="fade-up" data-aos-duration="800">
+            <div class="form-header text-center">
+                <div class="header-icon">
+                    <i class="bi bi-person-plus-fill"></i>
+                </div>
+                <h1>Create New Profile</h1>
+                <p>Add a new member to your organization</p>
+            </div>
+
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="custom-alert success" data-aos="fade-down">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <span>@TempData["SuccessMessage"]</span>
+                </div>
+            }
+
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="custom-alert error" data-aos="fade-down">
+                    <i class="bi bi-exclamation-circle-fill"></i>
+                    <span>@TempData["ErrorMessage"]</span>
+                </div>
+            }
+
+            <form asp-action="CreateProfile" method="post" class="needs-validation" novalidate>
+                <div class="form-section">
+                    <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="input-group">
+                            <span class="input-icon">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input asp-for="Name" class="form-input" placeholder="First Name" required />
+                        </div>
+                        <span asp-validation-for="Name" class="validation-message text-danger"></span>
+                    </div>
+
+                    <div class="form-group" data-aos="fade-up" data-aos-delay="150">
+                        <div class="input-group">
+                            <span class="input-icon">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input asp-for="LastName" class="form-input" placeholder="Last Name" required />
+                        </div>
+                        <span asp-validation-for="LastName" class="validation-message text-danger"></span>
+                    </div>
+
+                    <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="input-group">
+                            <span class="input-icon">
+                                <i class="bi bi-envelope"></i>
+                            </span>
+                            <input asp-for="Email" type="email" class="form-input" placeholder="Email Address" required />
+                        </div>
+                        <span asp-validation-for="Email" class="validation-message text-danger"></span>
+                    </div>
+
+                    <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+                        <div class="input-group">
+                            <span class="input-icon">
+                                <i class="bi bi-briefcase"></i>
+                            </span>
+                            <select asp-for="Role" class="form-input" required>
+                                <option value="">Select Role</option>
+                                <option value="Employee">Employee</option>
+                                <option value="Manager">Manager</option>
+                            </select>
+                        </div>
+                        <span asp-validation-for="Role" class="validation-message text-danger"></span>
+                    </div>
+                </div>
+
+                <button type="submit" class="custom-button">
+                    <span class="button-content">
+                        <i class="bi bi-person-plus-fill"></i>
+                        Create Profile
+                    </span>
+                    <div class="button-background"></div>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/js/Admin/CreateProfile.js"></script>
+}

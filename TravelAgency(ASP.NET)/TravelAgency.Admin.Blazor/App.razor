@@ -1,0 +1,31 @@
+﻿@using ELTE.TravelAgency.Admin.Model
+
+<Router AppAssembly="@typeof(App).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+    </Found>
+    <NotFound>
+        <PageTitle>Not found</PageTitle>
+        <LayoutView Layout="@typeof(MainLayout)">
+            <p role="alert">Sorry, there's nothing at this address.</p>
+        </LayoutView>
+    </NotFound>
+</Router>
+
+@code {
+    // Függőségi befecsekendezés adja meg az értékét, hasonló az @inject Razor direktívához.
+    [Inject]
+    private NavigationManager Navigation { get; set; } = null!;
+
+    [Inject]
+    private ITravelAgencyModel Model { get; set; } = null!;
+
+    protected override void OnInitialized()
+    {
+        if (!Model.IsUserLoggedIn)
+        {
+            Navigation.NavigateTo("/login");
+        }
+    }
+}

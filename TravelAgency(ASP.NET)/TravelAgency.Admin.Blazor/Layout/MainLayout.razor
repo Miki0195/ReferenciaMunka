@@ -1,0 +1,34 @@
+﻿@using ELTE.TravelAgency.Admin.Model
+
+@inherits LayoutComponentBase
+
+@inject NavigationManager Navigation
+@inject ITravelAgencyModel Model
+
+<div class="page">
+    <main>
+        <div class="top-row px-4">
+            <span>Utazási ügynökség adminisztrációs felület</span>
+            @if (Model.IsUserLoggedIn)
+            {
+                <button class="nav-link" @onclick="Logout">Kijelentkezés</button>
+            }
+            else
+            {
+                <NavLink class="nav-link" href="/login">Bejelentkezés</NavLink>
+            }
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+    private async Task Logout()
+    {
+        await Model.LogoutAsync();
+        Navigation.NavigateTo("/login");
+    }
+}

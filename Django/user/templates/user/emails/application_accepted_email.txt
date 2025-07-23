@@ -1,0 +1,13 @@
+Hello{% if user.name %} {{ user.name }}{% endif %},
+
+We are pleased to inform you that your application for the event "{{ event.eventName }}" has been accepted!
+
+Event Details:
+- Start Date: {{ event.startDate }}
+- End Date: {{ event.endDate }}
+- Location: {{ event.location.text }}
+
+The NGO/Event organizer might contact you soon. Stay tuned for future updates in the app!
+
+Thank you,
+Your Greenie Team

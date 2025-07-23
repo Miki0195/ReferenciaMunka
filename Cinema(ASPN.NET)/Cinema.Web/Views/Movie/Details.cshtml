@@ -1,0 +1,35 @@
+﻿@using ELTE.Cinema.Web.Utility
+@model ELTE.Cinema.Web.Models.MovieDetailViewModel
+
+
+<div class="row">
+    <div class="col-md-3">
+        <img class="img-fluid" src="@Model.Movie.Image.ToImgSrc()" alt="@Model.Movie.Title" />
+    </div>
+    <div class="col-md-9">
+        <h1>@Model.Movie.Title</h1>
+        <ul class="list-unstyled">
+            <li><strong>Released:</strong> @Model.Movie.Year</li>
+            <li><strong>Directed by:</strong> @Model.Movie.Director</li>
+            <li><strong>Length:</strong> @Model.Movie.Length minutes</li>
+        </ul>
+        <p>@Model.Movie.Synopsis</p>
+    </div>
+    <hr class="mt-4" />
+    <div>
+        <h2 class="mt-0">Screenings</h2>
+
+        @{
+            var viewData = new ViewDataDictionary(this.ViewData)
+            {
+                { "showMovieDetails", false },
+                { "showReservationLink", true}  // Config ViewData
+            };
+
+            foreach (var screening in Model.Screenings)
+            {
+                <partial name="ScreeningDetailComponent" model="screening" view-data="viewData" />
+            }
+        }
+    </div>
+</div>

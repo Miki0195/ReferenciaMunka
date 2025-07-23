@@ -1,0 +1,151 @@
+﻿@{
+    ViewData["Title"] = "View Schedule";
+}
+
+<link rel="stylesheet" href="~/css/Schedule/Manage.css">
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+
+<div id="toastContainer" class="toast-container position-fixed top-0 end-0 p-3"></div>
+
+<div class="container">
+    <div class="form-header text-center">
+        <div class="header-icon">
+            <i class="bi bi-calendar2-event"></i>
+        </div>
+        <h1>View Schedule</h1>
+        <p>View and manage your work schedule</p>
+    </div>
+
+    <!-- Vacation Days Information Section -->
+    <div id="vacationDaysInfo" class="mb-4">
+        <!-- This will be populated by JavaScript -->
+    </div>
+
+    <!-- Vacation Selection Overlay -->
+    <div class="vacation-selection-overlay d-none">
+        <div class="vacation-selection-header">
+            <div>
+                <h6 class="mb-1">Select Vacation Dates</h6>
+                <small class="text-muted">Click and drag to select multiple days</small>
+            </div>
+            <div class="d-flex gap-2">
+                <button class="btn btn-outline-secondary btn-sm" id="cancelSelection">
+                    <i class="fas fa-times"></i> Cancel
+                </button>
+                <button class="btn btn-success btn-sm" id="confirmSelection">
+                    <i class="fas fa-check"></i> Confirm Selection
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calendar Card -->
+    <div class="calendar-card p-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h5 class="mb-0">Your Schedule</h5>
+            <div class="d-flex align-items-center gap-3">
+                <div class="legend d-flex gap-3 align-items-center">
+                    <span class="d-flex align-items-center gap-2">
+                        <i class="fas fa-info-circle"></i>
+                        <small class="text-muted">Click on a day to view details</small>
+                    </span>
+                </div>
+                <div class="d-flex gap-2">
+                    <button id="editScheduleBtn" class="btn btn-warning">
+                        <i class="fas fa-plus"></i> Request Vacation
+                    </button>
+                    <button id="doneEditingBtn" class="btn btn-success d-none">
+                        <i class="fas fa-check"></i> Submit Request
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="selectionCounter" class="selection-counter d-none"></div>
+        <div id="calendar"></div>
+    </div>
+</div>
+
+<!-- Modal for viewing schedule details -->
+<div class="modal fade" id="scheduleModal" tabindex="-1" aria-labelledby="scheduleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="scheduleModalLabel">Schedule Details</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="schedule-details">
+                    <div class="mb-3">
+                        <label class="text-muted d-block mb-1">Date</label>
+                        <p id="scheduleDate" class="mb-0 fw-medium"></p>
+                    </div>
+                    <div class="mb-3">
+                        <label class="text-muted d-block mb-1">Time</label>
+                        <p id="scheduleTime" class="mb-0 fw-medium"></p>
+                    </div>
+                    <div>
+                        <label class="text-muted d-block mb-1">Comment</label>
+                        <p id="scheduleComment" class="mb-0 text-wrap"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Vacation Exists Modal -->
+<div class="modal fade" id="vacationExistsModal" tabindex="-1" aria-labelledby="vacationExistsModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="vacationExistsModal">Cannot Select This Date</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>You cannot select this date because you already have a <strong>pending or approved vacation</strong>.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Shit Exists Modal -->
+<div class="modal fade" id="shiftExistsModal" tabindex="-1" aria-labelledby="shiftExistsLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="shiftExistsLabel">Cannot Select This Date</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>You cannot select this date because a <strong>work shift</strong> already exists.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cannot Add Past Vacation Modal -->
+<div class="modal fade" id="cannotAddPastVacationModal" tabindex="-1" aria-labelledby="cannotAddPastVacationLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cannotAddPastVacationLabel">Cannot Request Vacation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>You cannot request a vacation for a <strong>past date</strong>. Please select a future date.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/Schedule/ViewSchedule.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>

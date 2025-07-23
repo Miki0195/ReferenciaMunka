@@ -1,0 +1,47 @@
+﻿@using ELTE.TravelAgency.Admin.Model
+@using ELTE.TravelAgency.Shared.Models
+
+@inject ITravelAgencyModel Model
+
+<!-- Image List -->
+<div class="d-flex flex-wrap">
+    @if (Building?.Images != null)
+    {
+        @foreach (var image in Building.Images)
+        {
+            <img src="@ConvertImage(image.ImageSmall)" @onclick="() => SelectImage(image)" class="img-thumbnail m-1" style="height: 100px;" />
+        }
+    }
+</div>
+
+<!-- Image Buttons -->
+<div class="d-flex justify-content-between mt-3">
+    <button class="btn btn-primary" @onclick="AddImage">Új kép hozzáadása</button>
+    <button class="btn btn-danger" @onclick="DeleteImage" disabled="@(selectedImage == null)">Kijelölt kép törlése</button>
+</div>
+
+@code {
+    [Parameter]
+    [EditorRequired]
+    public required BuildingDto Building { get; set; }
+
+    private ImageDto? selectedImage;
+
+    private void AddImage() { /* TODO */ }
+    private void DeleteImage() { Model.DeleteImage(selectedImage!); }
+    private void SelectImage(ImageDto image) { selectedImage = image; }
+
+    protected override void OnParametersSet()
+    {
+        selectedImage = null; // kiválasztott kép visszaállítása
+    }
+
+    private string ConvertImage(byte[] imageBytes)
+    {
+        if (imageBytes.Length == 0)
+            return string.Empty;
+
+        string base64String = Convert.ToBase64String(imageBytes);
+        return $"data:image/png;base64,{base64String}";
+    }
+}

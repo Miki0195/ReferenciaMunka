@@ -1,0 +1,10 @@
+<mat-toolbar>
+  <span routerLink="/">Utazási ügynökség</span>
+  <div *ngIf="!loggedIn">
+    <button mat-button routerLink="/register">Regisztráció</button>
+    <button mat-button routerLink="/login">Bejelentkezés</button>
+  </div>
+  <div *ngIf="loggedIn">
+    <button mat-button (click)="logout()">Kijelentkezés</button>
+  </div>
+</mat-toolbar>

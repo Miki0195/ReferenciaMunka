@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>ELTE.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <Company>Eötvös Loránd University (ELTE), Faculty of Informatics</Company>
+    <Copyright>Copyright © ELTE Faculty of Informatics 2025</Copyright>
+    <Authors>Máté Cserép, Zsombor Hartmann, Péter Kaszab, Roxána Provender</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cinema.Cache\Cinema.Cache.csproj" />
+    <ProjectReference Include="..\Cinema.Shared\Cinema.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
